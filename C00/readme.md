@@ -1,9 +1,37 @@
 # C00
 
+<h2> Temel C Bilgileri: </h2>
+
+<ol>
+  <li>Değişkenler: Değişkenler, verilerin saklanması için kullanılan isimli bellek alanlarıdır.</li>
+  <li>Veri Tipleri: C'de int, float, double, char, gibi veri tipleri bulunur.</li>
+  <li>Operatörler: Aritmetik, atama, karşılaştırma, mantıksal operatörler gibi operatörler bulunur.</li>
+  <li>Karar Yapıları: if-else, switch-case gibi yapılar bulunur.</li>
+  <li>Fonksiyonlar: Kullanıcı tarafından tanımlanabilir veya kütüphaneden çağırılabilir fonksiyonlar bulunur.</li>
+  <li>Pointer'lar: İşaretçiler, bellekteki verilerin adreslerini saklamaya olanak tanır.</li>
+  <li>Diziler ve Matrisler: Diziler, birbirine benzer verilerin bellekteki tek yerde saklanmasını sağlar. Matrisler ise 2 boyutlu dizilerdir.</li>
+  <li>Dosya İşlemleri: Dosyalardaki verilere erişmek ve dosyalarda veri saklamak için fopen, fclose, fread, fwrite gibi fonksiyonlar bulunur.</li>
+</ol>
+
+<h2> Write Kullanımı </h2> 
+
+"write" fonksiyonu, C dilinde dosya veya standart çıktı (ekran) üzerinde veri yazmak için kullanılan bir sistem çağrısıdır. Aşağıdaki gibi kullanılır:
+
+<code> #include <unistd.h> 
+int write(int fd, const void *buf, size_t count); </code>
+
+<blockquote> #include <unistd.h> kütüphanesi, Unix tabanlı işletim sistemlerinde standard bir sistem arama kütüphanesidir. Bu kütüphane, genel olarak sistem çağrıları, dosya erişimi, process yönetimi, dizin yönetimi gibi işlemleri gerçekleştirmek için kullanılan fonksiyonları içerir. Örnek olarak, write fonksiyonu bu kütüphanede bulunan bir fonksiyondur. </blockquote>
+  
+<ul style="list-style-type:circle;">
+  <li>fd: yazılacak dosyanın dosya tanımlayıcısıdır.</li>
+  <li>buf: yazılacak verinin bulunduğu bellek adresidir.</li>
+  <li>count: yazılacak verinin boyutudur (byte cinsinden).</li>
+</ul> 
+
+
 <h1>Ex00</h1>
-<a href="https://github.com/meteulken/42-piscine/blob/main/C00/ex00/ft_putchar.c"> Fonksiyon İçin Tıkla</a>
-<code> Açıklama </code>
-<blockquote> Bu kod parçacığı "ft_putchar" isimli bir fonksiyon tanımlar. Bu fonksiyon, verilen bir karakteri (c) ekrana yazdırmak için "write" fonksiyonunu kullanır. "write" fonksiyonu, bir dosyaya veya standart çıktıya (1) verilen veriyi yazmak için kullanılır. "1" değeri standart çıktı için kullanılır, "&c" değeri ise yazdırılacak veri adresidir ve "1" değeri ise yazdırılacak verinin boyutudur.</blockquote>
+<a href="https://github.com/meteulken/42-piscine/blob/main/C00/ex00/ft_putchar.c"> Kodlar İçin Buraya</a>
+<blockquote> Bu kod parçacığı "ft_putchar" isimli bir fonksiyon tanımlar. <br> Bu fonksiyon, verilen bir karakteri (c) ekrana yazdırmak için "write" fonksiyonunu kullanır.<br> "write" fonksiyonu, bir dosyaya veya standart çıktıya (1) verilen veriyi yazmak için kullanılır. <br> "1" değeri standart çıktı için kullanılır, "&c" değeri ise yazdırılacak veri adresidir ve "1" değeri ise yazdırılacak verinin boyutudur.</blockquote>
 
 <h1>Ex01</h1>
 <code> void	ft_print_alphabet(void) </code>
