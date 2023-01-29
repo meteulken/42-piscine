@@ -1,7 +1,8 @@
 # C00
 
 <h1>Ex00</h1>
-<code> void	ft_putchar(char c) </code>
+<a href="https://github.com/meteulken/42-piscine/blob/main/C00/ex00/ft_putchar.c"> Fonksiyon İçin Tıkla</a>
+<code> Açıklama </code>
 <blockquote> Bu kod parçacığı "ft_putchar" isimli bir fonksiyon tanımlar. Bu fonksiyon, verilen bir karakteri (c) ekrana yazdırmak için "write" fonksiyonunu kullanır. "write" fonksiyonu, bir dosyaya veya standart çıktıya (1) verilen veriyi yazmak için kullanılır. "1" değeri standart çıktı için kullanılır, "&c" değeri ise yazdırılacak veri adresidir ve "1" değeri ise yazdırılacak verinin boyutudur.</blockquote>
 
 <h1>Ex01</h1>
