@@ -16,9 +16,10 @@
 <h2> Write Kullanımı </h2> 
 
 "write" fonksiyonu, C dilinde dosya veya standart çıktı (ekran) üzerinde veri yazmak için kullanılan bir sistem çağrısıdır. Aşağıdaki gibi kullanılır:
-
+  <pre>
 <code> #include <unistd.h> 
 int write(int fd, const void *buf, size_t count); </code>
+</pre>
 
 <blockquote> #include <unistd.h> kütüphanesi, Unix tabanlı işletim sistemlerinde standard bir sistem arama kütüphanesidir. Bu kütüphane, genel olarak sistem çağrıları, dosya erişimi, process yönetimi, dizin yönetimi gibi işlemleri gerçekleştirmek için kullanılan fonksiyonları içerir. Örnek olarak, write fonksiyonu bu kütüphanede bulunan bir fonksiyondur. </blockquote>
   
@@ -27,7 +28,6 @@ int write(int fd, const void *buf, size_t count); </code>
   <li>buf: yazılacak verinin bulunduğu bellek adresidir.</li>
   <li>count: yazılacak verinin boyutudur (byte cinsinden).</li>
 </ul> 
-
 
 <h1>Ex00</h1>
 <a href="https://github.com/meteulken/42-piscine/blob/main/C00/ex00/ft_putchar.c"> Kodlar İçin Buraya</a>
