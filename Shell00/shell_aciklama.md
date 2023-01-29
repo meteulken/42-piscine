@@ -56,3 +56,79 @@ $ chmod 455 testShell00
 * 2 kullanımı yazma izni verir "write",
 * 1 kullanımı çalıştırma izni verir "execute", ve
 * 0 kullanımı izin vermez  "no permission."
+```
+
+<h1>EXERCISE 02</h1>
+
+![image](https://user-images.githubusercontent.com/109483424/215321331-37964641-24f7-4daf-a36d-8c92938620ae.png)
+
+
+
+#### 1)iki adet klasör oluşturalım:
+
+	mkdir  test0
+
+	mkdir  test2
+	
+#### 2)üç adet de test adında dosya oluşturalım:
+
+	touch test{1,3,4}
+	
+#### 3)ls -s komutu ile test0 dosyasını test6'ya soft link oluşturarak bağlıyalım:
+
+	ln -s test0 test6
+
+`test5` dosyasını `test3` dosyasına bağlayalım
+	
+	ln test3 test5
+	
+<blockquote> ln komutu, "test3" dosyasının "test5" adında bir simge bağlantısı oluşturmak için kullanılır. Bu, "test5" adındaki bir dosya oluşturulur ve "test3" dosyasına atanır, böylece "test5" dosyası "test3" dosyasına gösterilir ve aynı içeriğe sahiptir. Değiştirilen bir dosya, simge bağlantısını kullanarak erişilen dosya da değişecektir. </blockquote>
+
+#### 4)dosyanın içine değerler yazarak btye boyutunu belirleyelim
+```
+printf "1234" > ./test1
+
+printf "1" > ./test3
+
+printf "12" > ./test4
+```
+#### 5)dosyaların zaman bilgisini ayarlıyalım
+```
+touch -t 06012047  test0
+
+touch -t 06012146  test1
+
+touch -t 06012245  test2
+
+touch -t 06012344  test3
+
+touch -t 06012343  test4
+
+touch -t 06012344  test5
+
+touch -t 06012220  test6
+```
+
+#### 6)dosyalara gerekli izinleri veriyoruz detayları yukarıda anlattım.
+```
+chmod 715 ./test0
+
+chmod 714 ./test1
+
+chmod 504 ./test2
+
+chmod 404 ./test3
+
+chmod 641 ./test4
+```
+#### 7)komutu ile kontrolünü sağlıyoruz:
+
+	ls -l
+	
+#### 8)dosyaları tar ile sıkıştıyoruz: 
+
+	tar -cf exo2.tar *
+
+
+---
+---
