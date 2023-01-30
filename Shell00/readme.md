@@ -209,3 +209,98 @@ Intra sitesine giriş yapın : https://profile.intra.42.fr/
 git log -n 5 --pretty=format:"%H"
 ```
 <blockquote> "git log -n 5 --pretty=format:"%H"" komutu, git deposundaki son 5 commit'in hash değerini sadece hash'leri gösterir formatında listeler.</blockquote> 
+
+<h1>EXERCISE 06</h1>
+
+
+
+#### 1) Dosyamızı oluşturalım 
+
+    touch gitignore.sh
+
+
+#### 2) Git dosyalarını listeleyelim:
+
+     git ls-files --exclude-standard --ignored --others
+
+<blockquote> git ls-files komutu, Git veritabanındaki dosyaların listesini verir.<br>
+--exclude-standard parametresi, standart Git dışı dosyaları dışlar.<br>
+--ignored parametresi, Git tarafından görmezden gelinen dosyaları görmenize olanak tanır.<br>
+--others parametresi, Git veritabanındaki dosyalardan farklı olan dosyaları görmenize olanak tanır.<br>
+
+Bu komutun sonucu, Git veritabanındaki dosyalardan farklı olan, standart Git dışı ve görmezden gelinen dosyaların listesini verir.
+</blockquote>
+---
+
+<h1>EXERCISE 07</h1>
+
+
+#### "cat -e a" komutu, belirtilen dosya (burada "a") içeriğini ekrandaki satır sonlarını belirterek görüntüler. "-e" parametresi, satır sonlarını "$" sembolü ile gösterir.:
+
+```
+%>cat -e a
+STARWARS$
+
+Episode IV, A NEW HOPE It is a period of civil war.$
+
+$
+
+Rebel spaceships, striking from a hidden base, have won their first victory against the evil
+
+Galactic Empire.$
+
+During the battle, Rebel spies managed to steal secret plans to the Empire s ultimate weapon, the
+
+DEATH STAR,$
+
+an armored space station with enough power to destroy an entire planet.$
+
+$
+
+Pursued by the Empire s sinister agents, Princess Leia races home aboard her starship, custodian of
+
+the stolen plans that can save her people and restore freedom to the galaxy...$
+
+$
+```
+---
+---
+
+#### 1) Projenin verdiği `a` ve `sw.diff`dosyalarını tar dan çıkartalım:
+    
+    tar -xf ./'resources.tar.gz'
+
+#### 2) "patch ./a -o ./b < ./sw.diff" komutu, belirtilen ".sw.diff" dosyasındaki değişiklikleri "./a" dosyasından alıp "./b" dosyasına yapıp kaydetme işlemidir.:
+
+    patch ./a  -o ./b < ./sw.diff
+
+> #### "patch ./a -R < ./sw.diff" komutu, "./a" dosyasına uygulanacak "./sw.diff" dosyasındaki değişikliklerin geri alınmasını sağlar. "-R" seçeneği patch'i ters yapmak için kullanılır.:
+>
+>   patch ./a -R < ./sw.diff
+
+#### "cat -e ./b" komutu, belirtilen dosya "./b" içindeki verileri görüntüler ve her satırın sonundaki 'newline' karakterini görünebilir hale getirir. "-e" seçeneği ile satır sonu karakterleri görüntülenir.:
+```
+%>cat -e ./b
+Episode V, A NEW H0PE It is a period of civil war$
+Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire. $
+During the battle, Rebel spies managed to steal secret plans to the Empire's ultimate weapon, the STAR DEATH, an armored space station with enough power to destroy an entire planet.$
+$
+$
+Pursued by the Empire's sinister agents,$
+Princess Mehdi races home aboard her starship, custodian of the stolen plans that can save her people and restore the dictatorship to the galaxie..$
+$
+$
+$
+$
+```
+
+#### 3) Bu komutlar, dosyalar arasındaki farkları ölçmek ve iki fark dosyasını karşılaştırmak için kullanılır. İlk komut "./a" ve "./b" dosyaları arasındaki farkı "./sw.diff2" dosyasına kaydeder. İkinci komut ise "./sw.diff" ve "./sw.diff2" dosyaları arasındaki farkları karşılaştırır.:
+
+    diff ./a ./b > ./sw.diff2
+
+    diff ./sw.diff ./sw.diff2
+
+
+
+---
+---
