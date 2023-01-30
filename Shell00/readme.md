@@ -129,5 +129,41 @@ chmod 641 ./test4
 
 	tar -cf exo2.tar *
 
-
 ---
+
+<h1>EXERCISE 03</h1>
+
+#### SSH-KEY Oluşturma
+
+## SSH dizinine girelim
+
+<code> $ cd ~/.ssh </code> 
+
+## ssh-key komutunu kullanarak ssh oluşturalım
+<code> ssh-keygen </code>
+
+## sizden şifre oluşturmanızı isticek 'enter' basarak şifre koymadan devam edebilirsiniz.
+
+<code> cat ~/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAklOUpkDHrfHY17SbrmTIpNLTGK9Tjom/BWDSU
+GPl+nafzlHDTYW7hdI4yZ5ew18JH4JW9jbhUFrviQzM7xlELEVf4h9lFX5QVkbPppSwg0cda3
+Pbv7kOdJ/MTyBlWXFCR+HAo3FXRitBqxiX1nKhXpHAZsMciLq8V6RjsNAQwdsdMFvSlVK/7XA
+t3FaoJoAsncM1Q9x5+3V0Ww68/eIFmb1zuUFljQJKprrX88XypNDvjYNby6vw/Pb0rwert/En
+mZ+AW4OZPnTPI89ZPmVMLuayrD2cE86Z/il8b+gw3r3+1nKatmIkjn2so1d01QraTlMqVSsbx
+NrRFi9wrf+M7Q== schaconamylaptop.local </code>
+
+<blockquote> Yukarıdaki gibi bir çıktı vericek bunu id_rsa.pub dosyasına kaydedin. </blockquote> 
+
+<h3> Dosya işlemleri bitti sıra ssh-key'i Intra hesabımıza kaydedicez. <h3>
+
+Intra sitesine giriş yapın : https://profile.intra.42.fr/
+
+1. Sağ üstten kullanıcı adınıza tıklayın > Ayarlar sekmesine tıklayın
+
+2. Sol tarafta bulunan SSH Key kısmına tıklayın.
+
+3. Yeni SSH Key oluştur.
+
+4. Terminalden çıktı olarak kopyaladığımız bağlantıyı içine yapıştırın ve kaydedin.
+
+5. SSH-Key hazır artık git clone ve evaluation yapabilirsiniz.!
