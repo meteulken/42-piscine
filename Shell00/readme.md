@@ -171,4 +171,6 @@ Intra sitesine giriş yapın : https://profile.intra.42.fr/
 
 5. SSH-Key hazır artık git clone ve evaluation yapabilirsiniz.!
 
-#### NOT: klist.txt olarak uygulamasını bilmiyorum. Ben böyle yapmıştım.
+---
+
+#### NOT: klist.txt olarak uygulamasını bilmiyorum. Ben böyle yapmıştım.
