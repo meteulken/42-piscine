@@ -135,14 +135,14 @@ chmod 641 ./test4
 
 #### SSH-KEY Oluşturma
 
-## SSH dizinine girelim
+#### 1)SSH dizinine girelim
 
 <code> $ cd ~/.ssh </code> 
 
-## ssh-key komutunu kullanarak ssh oluşturalım
+#### 2)ssh-key komutunu kullanarak ssh oluşturalım
 <code> ssh-keygen </code>
 
-## sizden şifre oluşturmanızı isticek 'enter' basarak şifre koymadan devam edebilirsiniz.
+#### 3)sizden şifre oluşturmanızı isticek 'enter' basarak şifre koymadan devam edebilirsiniz.
 
 <code> cat ~/.ssh/id_rsa.pub
 ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAklOUpkDHrfHY17SbrmTIpNLTGK9Tjom/BWDSU
@@ -154,8 +154,11 @@ NrRFi9wrf+M7Q== schaconamylaptop.local </code>
 
 <blockquote> Yukarıdaki gibi bir çıktı vericek bunu id_rsa.pub dosyasına kaydedin. </blockquote> 
 
-<h3> Dosya işlemleri bitti sıra ssh-key'i Intra hesabımıza kaydedicez. <h3>
+#### 4)vim id_rsa.pub komutu ile içine girip çıktıyı yapıştırın. Ardından ESC > :wq yazarak dosyayı kaydedin ve çıkın.
 
+#### 5)Dosya işlemleri bitti sıra ssh-key'i Intra hesabımıza kaydedicez.
+
+---	
 Intra sitesine giriş yapın : https://profile.intra.42.fr/
 
 1. Sağ üstten kullanıcı adınıza tıklayın > Ayarlar sekmesine tıklayın
