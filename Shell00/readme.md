@@ -174,3 +174,38 @@ Intra sitesine giriş yapın : https://profile.intra.42.fr/
 ---
 
 #### NOT: klist.txt olarak uygulamasını bilmiyorum. Ben böyle yapmıştım.
+
+<h1>EXERCISE 04</h1>
+
+#### 1) dosyamızı oluşturalım
+
+    touch midLS
+
+
+#### 2) ls listeleme komutu -U = sıralayarak -m = virgül ekle -p / işareti koyarak
+
+    ls -Ump 
+
+<h1>EXERCISE 05</h1>
+
+#### 1) örnek olarak 5 tane git commit log'unun çıktısı:
+
+<code>05cb017fddb87b588f015fbd3b44ac9b96cba760
+90f900418ec48052a51a674963e6d5688fa2fe29
+6bdaf71595ff90e987398059071b8f668f29abb6
+26be13667edd1a882ad5093725d962bc056a9c9f
+4caf2adc0b34c02c4c616e2e2673b25bad9cd2e4</code>
+
+#### 2) sh uzantılı dosyamızı oluşturalım
+
+    touch git_commit.sh
+
+
+
+
+#### 2) komutumuz
+```
+#!/bin/sh
+git log -n 5 --pretty=format:"%H"
+```
+<blockquote> "git log -n 5 --pretty=format:"%H"" komutu, git deposundaki son 5 commit'in hash değerini sadece hash'leri gösterir formatında listeler.</blockquote> 
