@@ -23,5 +23,3 @@ void	ft_putstr(char *str)
 		i++;
 	}
 }
-
-//  char kelime[]="Hasan";
