@@ -8,4 +8,6 @@
 ---
 ### [C00 Detaylı Anlatım](https://github.com/meteulken/42-piscine/tree/main/C00)
 ---
-### [C01 (Comming Soon)]
+### [C01 Detaylı Anlatım](https://github.com/meteulken/42-piscine/tree/main/C01)
+---
+### [C02 (Comming Soon)]
