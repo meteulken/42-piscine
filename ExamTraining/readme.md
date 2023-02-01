@@ -1,7 +1,7 @@
 # Exam
 
 Not: Sınavda Norminette yok. 
-
+Not: Yukarıdaki sorular sınavda çıkabilir ama sınav havuzu geniş olduğundan farklı sorular da gelebilir.
 
 #  Giriş Detayları
 
