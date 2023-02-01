@@ -17,7 +17,7 @@
 
 
 <code> git init </code>
-<br> Git version control sisteminde, yeni bir Git deposu oluşturmak için kullanılan bir komandır. Bu komut, çalışma dizininizi Git deposu haline getirir ve Git'in dosyaları izlemesi ve saklaması için gerekli tüm verileri oluşturur.
+<br> Git version control sisteminde, yeni bir Git deposu oluşturmak için kullanılan bir komuttur. Bu komut, çalışma dizininizi Git deposu haline getirir ve Git'in dosyaları izlemesi ve saklaması için gerekli tüm verileri oluşturur.
 
 <code> git add . </code>
 <br> Git üzerinde bulunan tüm dosyaları ve değişiklikleri geçerli çalışma dizinine eklemek için kullanılan bir komandır. Bu komut, Git üzerindeki tüm dosyaları ve değişiklikleri Git veritabanına kaydetmenize olanak tanır.
