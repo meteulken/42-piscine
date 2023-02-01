@@ -30,8 +30,8 @@ cut -d " " -f 2 komutu, bulunan satırdaki 2. sütun (space karakteri ile ayrıl
 
 ## C05
 <code>echo -e "42" | tr -d "\n" > "\?$*'MaRViN'*$?\"</code> <br>
-özel karakter koymak için her karakter başına "\" işareti konulur.<br>
-örn: \? \& \$ \\ \% > touch \%\&\?dosya_adı\\\"\?\&
+özel karakter koymak için her karakter başına "\\" işareti konulur.<br>
+örn: \\? \\& \\$ \\\ \\% > touch \\%\\&\\?dosya_adı\\\\\"\\?\\&
 
 ## C06
 <code>ls -l | awk 'NR % 2 == 1'</code> <br>
