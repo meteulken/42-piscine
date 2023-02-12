@@ -87,5 +87,11 @@
 <a href="https://github.com/meteulken/42-piscine/blob/main/C02/ex08/ft_strlowcase.c"> Click for Code</a> <br>
 
 * ft_strlowcase fonksiyonu, verilen str dizisindeki harfleri küçük harfe çevirir ve bu diziyi döndürür.
+
+<h1>Ex09</h1>
+
+<a href="https://github.com/meteulken/42-piscine/blob/main/C02/ex09/ft_strcapitalize.c"> Click for Code</a> <br>
+
 * İlk olarak ft_strlowcase fonksiyonu çağrılır ve dizinin tüm karakterleri küçük harf haline getirilir. Daha sonra döngü ile dizi içinde gezilir ve her kelime başındaki harf büyük harfe çevrilir.
 * Eğer bir karakter 0 ile 9 arasında bir sayıysa c değişkeni 0 olarak kalır ve sonraki harf için büyük harf olarak çevrilmez. Eğer bir karakter sayı değilse c değişkeni 1 yapılır ve sonraki harf için büyük harf olarak çevrilmez. Döngü tamamlandıktan sonra dizi döndürülür.
+
