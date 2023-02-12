@@ -10,7 +10,9 @@
 ---
 ### [C01 Detaylı Anlatım](https://github.com/meteulken/42-piscine/tree/main/C01)
 ---
-### [C02 (Comming Soon)]
+### [C02 Detaylı Anlatım](https://github.com/meteulken/42-piscine/tree/main/C02)
+---
+### [C03 (Comming Soon)]
 ---
 
 <h1>Proje Nasıl Pushlanır </h1>
