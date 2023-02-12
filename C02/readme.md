@@ -54,7 +54,7 @@
 
 <h1>Ex05</h1>
 
-<a href="https://github.com/meteulken/42-piscine/blob/main/C01/ex05/ft_putstr.c"> Click for Code</a> <br>
+<a href="https://github.com/meteulken/42-piscine/blob/main/C02/ex05/ft_str_is_uppercase.c"> Click for Code</a> <br>
 
 * Bu "ft_str_is_uppercase" fonksiyonu, belirtilen bir dizgenin (str) sadece büyük harf karakterlerinden oluşup oluşmadığını kontrol etmek için kullanılır.
 * Fonksiyon, "str" dizgesindeki karakterleri bir "while" döngüsü kullanarak tek tek kontrol eder. Her bir karakter, büyük harf karakteri olup olmadığını kontrol eder ve değilse fonksiyon 0 değerini döndürür. Eğer tüm karakterler büyük harf karakterleri ise, fonksiyon 1 değerini döndürür.
