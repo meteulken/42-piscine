@@ -1,6 +1,6 @@
 # C08
 
-<h1> EX 00 </h1>
+<h2> Header Dosyası Nedir ? </h2> 
 
 <ol>
 <li>C programlama dilinde bir başlık dosyası, diğer kaynak kod dosyalarında kullanılan değişken, fonksiyon ve yapıların prototiplerini içeren bir dosyadır.</li> 
@@ -11,6 +11,8 @@
 <li>Başlık dosyaları, kodun okunabilirliğini artırır, zaman kazandırır ve hataları önler.</li>
 <li>Ayrıca, C dili için standart başlık dosyaları da vardır. Örneğin, <stdio.h> dosyası, standart giriş/çıkış fonksiyonlarını tanımlar.</li>
 </ol>
+
+<h1> EX 00 </h1>
 
 <h2> #define  Nedir ? </h2> 
 
