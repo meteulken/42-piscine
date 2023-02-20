@@ -49,3 +49,51 @@ Bu kod, "ABS" adında bir makro tanımlar ve bu makro, bir sayının mutlak değ
 
 Makro tanımındaki "#define" komutu, "ABS" ismiyle bir makro tanımlar. Makronun kendisi, iki parantez arasında yazılmıştır. Parantezlerin içindeki "(Value < 0) ? -Value : Value" ifadesi, "Value" parametresinin değerini kontrol eder. Eğer "Value" negatif ise, "? ve :" operatörü ile negatifin alınması ve pozitif ise değerin kendisinin alınması sağlanır.
 <br>Yani "?" operatörü bir if koşulu gibi düşünebiliriz "(Value < 0)" bu koşuldan true dönerse ":" operatörün sol kısmı false dönerse sağ kısmı geçerli olucaktır.<br>
+	
+<h1> EX 03 </h1>
+  <pre>
+<code>typedef struct s_point
+{
+	int	x;
+	int	y;
+}				t_point;</code>
+</pre>
+	
+Bu kod, "t_point" adında bir yapı tanımlar. Bu yapı, iki tamsayı değişkeni olan "x" ve "y" içerir.
+
+Ayrıca, bu yapıyı daha kolay kullanmak için "typedef" anahtar kelimesi kullanılır. "typedef" ile, "struct s_point" yerine sadece "t_point" kullanılabilir.
+
+ <pre>
+<code>void	set_point(t_point *point)
+{
+	point->x = 42;
+	point->y = 21;
+}</code>
+</pre>	
+	
+Bu kod, "set_point" adında bir fonksiyon tanımlar. Bu fonksiyon, bir t_point yapısı işaretçisi alan ve bu yapıdaki x ve y değerlerini sırasıyla 42 ve 21 olarak ayarlayan bir işleve sahiptir.
+
+Fonksiyon, "void" ile başlar, yani herhangi bir değer döndürmez. Fonksiyon, "t_point *point" parametresi ile çağrılır, bu da bir t_point yapısı işaretçisi beklediği anlamına gelir. Fonksiyon içinde, "->" operatörü kullanılarak, işaretçinin gösterdiği yapıdaki x ve y değişkenlerine 42 ve 21 değerleri atanır.
+	
+<h1> EX 04 </h1>
+<pre><code>
+while (index < ac)
+	{
+		array[index].size = ft_str_length(av[index]);
+		array[index].str = av[index];
+		array[index].copy = ft_strdup(av[index]);
+		index++;
+	}</code>
+</pre>
+	
+Bu kod, bir while döngüsü içinde çalışan bir dizi işlemi gerçekleştirir. Döngü, "index" adında bir değişkenin "ac" adlı bir sınır değerine kadar artırılmasıyla kontrol edilir.
+
+Her turda, "array[index]" adlı bir t_point yapısı elemanına, "ft_str_length" ve "ft_strdup" fonksiyonlarının sonuçları atanır. Bu işlemler, "av[index]" adlı bir karakter dizisine dayanır.
+
+İlk önce, "ft_str_length" fonksiyonu, "av[index]" karakter dizisinin uzunluğunu hesaplar ve bu uzunluğu "array[index].size" elemanına atar.
+
+Daha sonra, "av[index]" karakter dizisi, "array[index].str" elemanına doğrudan atanır.
+
+Son olarak, "ft_strdup" fonksiyonu, "av[index]" karakter dizisini kopyalar ve bu kopyayı "array[index].copy" elemanına atar. Bu, "ft_strdup" fonksiyonunun dinamik bellek tahsisi yaptığı ve bu nedenle bellek yönetimi açısından önemli olduğu anlamına gelir.
+
+Bu döngü, t_point yapısı içindeki üç farklı elemanın doldurulmasını sağlar: "size", "str" ve "copy". Bu elemanlar, "av" adlı bir dizi karakter dizisindeki her öğe için ayrı ayrı hesaplanır ve dizi elemanlarına atanır. Bu işlem, daha sonra bu yapıları kullanarak işlem yapmak için kullanılabilir.
